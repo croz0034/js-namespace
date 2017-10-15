@@ -3,7 +3,7 @@ var CROZ0034 = {
         let pandora = document.getElementById("boxes");
         let cardBoard = document.createElement("div");
         cardBoard.className = "box";
-        cardBoard.textContent= "croz003879";
+        cardBoard.textContent= "croz0034";
         pandora.appendChild(cardBoard);
         cardBoard.addEventListener("click", this.curiosity);
         cardBoard.addEventListener("mouseover", this.highlight);
