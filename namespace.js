@@ -18,10 +18,4 @@ var CROZ0034 = {
             ev.currentTarget.classList.toggle("highlight");
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 505f89f2ebfa0487d96b0e82a1b63b8e25f29cad
 };
->>>>>>> 505f89f2ebfa0487d96b0e82a1b63b8e25f29cad
