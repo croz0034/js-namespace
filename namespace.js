@@ -1,5 +1,5 @@
 var CROZ0034 = {
-    init: function(ev){
+    init: function(){
         let pandora = document.getElementById("boxes");
         let cardBoard = document.createElement("div");
         cardBoard.className = "box";
