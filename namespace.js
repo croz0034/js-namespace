@@ -1,19 +1,24 @@
 var CROZ0034 = {
-    init: function(ev){
+    init: function(){
         let pandora = document.getElementById("boxes");
         let cardBoard = document.createElement("div");
         cardBoard.className = "box";
-        cardBoard.textContent= "croz003879";
+        cardBoard.textContent= "croz0034";
         pandora.appendChild(cardBoard);
-        cardBoard.addEventListener("click", this.curiosity);
-        cardBoard.addEventListener("mouseover", this.highlight);
-        cardBoard.addEventListener("mouseout", this.highlight);},
-    
-highlight: function (ev){
-    ev.currentTarget.classList.toggle("highlight");},
-
- curiosity: function (ev){
-    ev.currentTarget.style.backgroundColor = "blue";
-    ev.currentTarget.style.borderColor = "orange";
-}
+        cardBoard.addEventListener("click", curiosity);
+        cardBoard.addEventListener("mouseover", highlight);
+        cardBoard.addEventListener("mouseout", highlight); 
+      
+        function curiosity(ev){
+            ev.currentTarget.style.backgroundColor = "blue";
+            ev.currentTarget.style.borderColor = "orange";
+        }
+        
+        function highlight(ev){
+            ev.currentTarget.classList.toggle("highlight");
+        }
+    }
+<<<<<<< HEAD
+=======
 };
+>>>>>>> 505f89f2ebfa0487d96b0e82a1b63b8e25f29cad
