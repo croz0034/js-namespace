@@ -5,22 +5,15 @@ var CROZ0034 = {
         cardBoard.className = "box";
         cardBoard.textContent= "croz0034y";
         pandora.appendChild(cardBoard);
-        cardBoard.addEventListener("click", c);
-        cardBoard.addEventListener("mouseover", this.highlight);
-        cardBoard.addEventListener("mouseout", this.highlight); 
-      function c(ev){
-    ev.currentTarget.style.backgroundColor = "blue";
-    ev.currentTarget.style.borderColor = "orange";
-}
-
+        cardBoard.addEventListener("click", curiosity);
+        cardBoard.addEventListener("mouseover", highlight);
+        cardBoard.addEventListener("mouseout", highlight); 
+      
+      function curiosity(ev){
+        ev.currentTarget.style.backgroundColor = "blue";
+        ev.currentTarget.style.borderColor = "orange";};
         
-    },
-    
-highlight: function (ev){
-    ev.currentTarget.classList.toggle("highlight");},
-
- curiosity: function (ev){
-    ev.currentTarget.style.backgroundColor = "blue";
-    ev.currentTarget.style.borderColor = "orange";
-}
+     function highlight(ev){
+       ev.currentTarget.classList.toggle("highlight"};   
+    };
 };
