@@ -1,0 +1,17 @@
+var CROZ0034 = {
+    init: function(ev){
+        let pandora = document.getElementById("boxes");
+        let cardBoard = document.createElement("div");
+        cardBoard.className = "box";
+        cardBoard.textContent= "croz0034";
+        pandora.appendChild(cardBoard);
+        cardBoard.addEventListener("click", curiosity);
+        cardBoard.addEventListener("mouseover", highlight);
+        cardBoard.addEventListener("mouseout", highlight);},
+highlight: function (ev){
+    currentTarget.classList.toggle("highlight");},
+curiosity: function (ev){
+    currentTarget.style.backgroundColor = "blue";
+    currentTarget.style.borderColor = "orange";
+}
+};
