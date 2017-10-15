@@ -9,11 +9,11 @@ var CROZ0034 = {
         cardBoard.addEventListener("mouseover", highlight);
         cardBoard.addEventListener("mouseout", highlight); 
       
-      function curiosity(ev){
-        ev.currentTarget.style.backgroundColor = "blue";
-        ev.currentTarget.style.borderColor = "orange";};
+        function curiosity(ev){
+            ev.currentTarget.style.backgroundColor = "blue";
+            ev.currentTarget.style.borderColor = "orange";};
         
-     function highlight(ev){
-       ev.currentTarget.classList.toggle("highlight"};   
+        function highlight(ev){
+            ev.currentTarget.classList.toggle("highlight")};   
     };
 };
