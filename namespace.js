@@ -1,35 +1,34 @@
-//var CROZ0034 = {
-//    init: function(i){
-//   let pandora = document.createElement("div");
-//pandora.className("box");
-//    pandora.appendChild("#boxes")
-//    let test = document.createElement("p");
-//    test.textContent = "croz0034";
-//    test.appendChild("#boxes")}
+var CROZ0034 = {
+    init: function(ev){
+        let pandora = document.getElementById("boxes");
+        let cardBoard = document.createElement("div");
+        cardBoard.className = "box";
+        cardBoard.textContent= "croz0034";
+        pandora.appendChild(cardBoard);
+        cardBoard.addEventListener("click", curiosity);
+        cardBoard.addEventListener("mouseover", highlight);
+        cardBoard.addEventListener("mouseout", highlight);},
+highlight: function (ev){
+    currentTarget.classList.toggle("highlight");},
+curiosity: function (ev){
+    currentTarget.style.backgroundColor = "blue";
+    currentTarget.style.borderColor = "orange";
+}
+};
+
+//
+//function init(ev){
+//    let pandora = document.querySelector(".box");
+//    pandora.addEventListener("click", curiosity);
+//    pandora.addEventListener("mouseover", highlight);
+//    pandora.addEventListener("mouseout", highlight);
 //};
 
-
-document.addEventListener('DOMContentLoaded', init);
-
-function init(ev){
-    let pandora = document.querySelector("#boxes");
-    pandora.addEventListener("click", curiosity);
-    pandora.addEventListener("mouseover", highlight);
-    pandora.addEventListener("mouseout", highlight);
-};
-
-function klack(ev){
-   ev.currentTarget.classList.toggle("active");
-    let img = document.createElement("img");
-    ev.currentTarget.appendChild(img);
-    img.addEventListener('load', function(){window.alert('Bill has arrived')})
-    img.src = "http://fillmurray.com/300/300";
-};
-function highlight(ev){
-    ev.currentTarget.classList.toggle("highlight");
-
-};
-function curiosity(ev){
-    ev.currentTarget.style.backgroundColor = "blue";
-    ev.currentTarget.style.borderColor = "orange";
-};
+//function highlight(ev){
+//    ev.currentTarget.classList.toggle("highlight");
+//
+//};
+//function curiosity(ev){
+//    ev.currentTarget.style.backgroundColor = "blue";
+//    ev.currentTarget.style.borderColor = "orange"
+//};
