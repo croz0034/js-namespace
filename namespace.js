@@ -11,9 +11,11 @@ var CROZ0034 = {
       
         function curiosity(ev){
             ev.currentTarget.style.backgroundColor = "blue";
-            ev.currentTarget.style.borderColor = "orange";};
+            ev.currentTarget.style.borderColor = "orange";
+        }
         
         function highlight(ev){
-            ev.currentTarget.classList.toggle("highlight")};   
-    };
+            ev.currentTarget.classList.toggle("highlight");
+        }
+    }
 };
